@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import api from '../services/api';
+import api, { apiEndpoint } from '../services/api';
 import { Upload, CheckCircle2, AlertTriangle, ArrowRight, Loader2, Info } from 'lucide-react';
 import StatusBadge from '../components/StatusBadge';
 
@@ -74,7 +74,7 @@ export const ProviderUploadPage = () => {
       if (notes) formData.append('notes', notes);
 
       const token = localStorage.getItem('caretrail_token');
-      const response = await fetch('/api/records/upload-provider', {
+      const response = await fetch(apiEndpoint('/records/upload-provider'), {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`

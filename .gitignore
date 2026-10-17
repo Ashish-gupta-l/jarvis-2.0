@@ -1,0 +1,24 @@
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Java / backend
+backend/target/
+
+# Local database files
+backend/data/
+*.mv.db
+*.trace.db
+
+# Uploads
+uploads/
+backend/uploads/
+
+# Environment files
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*

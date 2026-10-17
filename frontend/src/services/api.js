@@ -1,7 +1,17 @@
 import axios from 'axios';
 
+const configuredApiUrl = (import.meta.env.VITE_API_URL || '').trim().replace(/\/+$/, '');
+const apiRoot = configuredApiUrl
+  ? (configuredApiUrl.endsWith('/api') ? configuredApiUrl : `${configuredApiUrl}/api`)
+  : '/api';
+
+export const apiEndpoint = (path) => {
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `${apiRoot}${normalizedPath}`;
+};
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: apiRoot,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -35,7 +45,9 @@ api.interceptors.response.use(
     if (!message) {
       const rawData = typeof error.response?.data === 'string' ? error.response.data : '';
       if (rawData.includes('ECONNREFUSED') || error.message?.includes('Network Error') || error.response?.status === 504 || (error.response?.status === 500 && rawData.includes('proxy'))) {
-        message = 'Cannot connect to CareTrail backend server on port 8080. Please make sure the backend is running (run start-backend.bat).';
+        message = configuredApiUrl
+          ? 'Cannot connect to the configured CareTrail backend API.'
+          : 'Cannot connect to CareTrail backend server on port 8080. Please make sure the backend is running (run start-backend.bat).';
       } else {
         message = error.message || 'An unexpected error occurred';
       }
