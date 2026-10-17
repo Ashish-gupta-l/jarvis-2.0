@@ -22,6 +22,7 @@ import ProviderUploadPage from './pages/ProviderUploadPage';
 import AdminVerificationPage from './pages/AdminVerificationPage';
 import AiAssistantPage from './pages/AiAssistantPage';
 import ChatbotWidget from './components/ChatbotWidget';
+import PokemonForestAmbient from './components/PokemonForestAmbient';
 
 import './App.css';
 
@@ -48,6 +49,7 @@ export const App = () => {
     <AuthProvider>
       <Router>
         <div className="app-container">
+          <PokemonForestAmbient />
           <Navbar />
           <main className="main-content">
             <Routes>

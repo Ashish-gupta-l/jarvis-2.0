@@ -30,32 +30,8 @@ export const LandingPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section style={{ background: 'linear-gradient(180deg, #ecfdf5 0%, #f0fdf4 50%, #f7faf8 100%)', padding: '3.5rem 0 3rem', borderBottom: '1px solid rgba(34, 197, 94, 0.15)' }}>
-        <div className="container" style={{ textAlign: 'center', maxWidth: '960px' }}>
-          
-          {/* Buildasaur Greenery Special Twist Announcement */}
-          <div className="greenery-banner" style={{ textAlign: 'left', marginBottom: '2.5rem' }}>
-            <div style={{ flex: 1, zIndex: 1 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
-                <span className="greenery-twist-tag">Round 2: The Twist</span>
-                <span className="wood-tag">🍃 Buildasaur Greenery Edition</span>
-                <span style={{ fontSize: '0.78rem', color: '#a7f3d0' }}>Indigo Tech Fest</span>
-              </div>
-              <h2 className="greenery-banner-title">
-                Same Ideas, New Challenges, Bigger Impact!
-              </h2>
-              <p className="greenery-banner-sub">
-                CareTrail has evolved with the <strong>Lush Greenery theme</strong> — harmonizing clinical continuity, patient safety, and resilient AI triage within a vibrant, nature-inspired design system.
-              </p>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-              <img 
-                src="/buildasaur-greenery.png" 
-                alt="Buildasaur Indigo Tech Fest - Greenery Edition" 
-                style={{ height: '95px', maxWidth: '200px', objectFit: 'contain', borderRadius: '10px', boxShadow: '0 6px 16px rgba(0,0,0,0.25)', border: '2px solid rgba(134, 239, 172, 0.4)' }}
-              />
-            </div>
-          </div>
+      <section style={{ background: 'linear-gradient(180deg, rgba(220, 252, 231, 0.6) 0%, rgba(240, 253, 244, 0.8) 50%, transparent 100%)', padding: '3.5rem 0 3rem', position: 'relative' }}>
+        <div className="container" style={{ textAlign: 'center', maxWidth: '960px', position: 'relative', zIndex: 2 }}>
 
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#dcfce7', color: '#14532d', padding: '0.35rem 0.85rem', borderRadius: '9999px', fontSize: '0.82rem', fontWeight: 700, marginBottom: '1.25rem', border: '1px solid #86efac' }}>
             <Activity size={14} color="#15803d" /> Healthcare Continuity & Document Trust Layer
