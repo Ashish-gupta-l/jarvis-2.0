@@ -73,8 +73,8 @@ export const PatientDashboard = () => {
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
             <h1 className="page-title">Welcome back, {user?.fullName || 'Patient'}</h1>
-            <span style={{ background: '#e0f2fe', color: '#0369a1', fontSize: '0.8rem', fontWeight: 600, padding: '0.2rem 0.6rem', borderRadius: '9999px' }}>
-              Patient Portal
+            <span style={{ background: '#dcfce7', color: '#14532d', fontSize: '0.8rem', fontWeight: 700, padding: '0.2rem 0.65rem', borderRadius: '9999px', border: '1px solid #86efac' }}>
+              Patient Portal 🍃
             </span>
           </div>
           <p className="page-subtitle">
@@ -117,12 +117,12 @@ export const PatientDashboard = () => {
         <div className="card" style={{ padding: '1.25rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <span style={{ fontSize: '0.82rem', fontWeight: 600, color: '#64748b', textTransform: 'uppercase' }}>Consolidated Records</span>
-            <FileText size={18} color="#0284c7" />
+            <FileText size={18} color="#15803d" />
           </div>
           <div style={{ fontSize: '1.85rem', fontWeight: 700, color: '#0f172a', marginTop: '0.4rem' }}>
             {timeline.length}
           </div>
-          <span style={{ fontSize: '0.78rem', color: '#059669', marginTop: '0.2rem', display: 'block' }}>
+          <span style={{ fontSize: '0.78rem', color: '#15803d', marginTop: '0.2rem', display: 'block' }}>
             Unified across all providers
           </span>
         </div>
@@ -173,9 +173,9 @@ export const PatientDashboard = () => {
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">
-              <Calendar size={18} color="#0284c7" /> Recent Medical Records
+              <Calendar size={18} color="#15803d" /> Recent Medical Records
             </h3>
-            <Link to="/timeline" style={{ fontSize: '0.85rem', color: '#0284c7', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
+            <Link to="/timeline" style={{ fontSize: '0.85rem', color: '#15803d', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
               Full Timeline <ArrowRight size={14} />
             </Link>
           </div>

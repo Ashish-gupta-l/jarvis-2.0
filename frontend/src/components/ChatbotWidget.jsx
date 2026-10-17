@@ -501,7 +501,7 @@ export const ChatbotWidget = () => {
                 onClick={() => handleSend(prompt)}
                 disabled={isLoading}
               >
-                <Sparkles size={11} color="#0284c7" />
+                <Sparkles size={11} color="#15803d" />
                 <span>{prompt}</span>
               </button>
             ))}

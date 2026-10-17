@@ -68,8 +68,8 @@ export const ContinuityBriefPage = () => {
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
             <h1 className="page-title">Clinical Continuity Brief</h1>
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, background: '#e0f2fe', color: '#0369a1', padding: '0.2rem 0.6rem', borderRadius: '4px' }}>
-              SOURCE-LINKED CLINICAL RECONCILIATION
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, background: '#dcfce7', color: '#14532d', padding: '0.2rem 0.6rem', borderRadius: '4px', border: '1px solid #86efac' }}>
+              SOURCE-LINKED CLINICAL RECONCILIATION 🍃
             </span>
           </div>
           <p className="page-subtitle">
@@ -199,7 +199,7 @@ export const ContinuityBriefPage = () => {
           <div className="card">
             <div className="card-header">
               <h3 className="card-title">
-                <CheckCircle2 size={18} color="#0284c7" /> Diagnoses & Clinical Impressions
+                <CheckCircle2 size={18} color="#15803d" /> Diagnoses & Clinical Impressions
               </h3>
               <span style={{ fontSize: '0.75rem', color: '#64748b' }}>As written in records</span>
             </div>
@@ -225,7 +225,7 @@ export const ContinuityBriefPage = () => {
                         <td>{claim.sourceFacility || 'Unknown'}</td>
                         <td>{claim.sourceDate}</td>
                         <td>
-                          <span style={{ fontSize: '0.72rem', fontWeight: 600, padding: '0.15rem 0.5rem', borderRadius: '4px', background: '#e0f2fe', color: '#0369a1' }}>
+                          <span style={{ fontSize: '0.72rem', fontWeight: 600, padding: '0.15rem 0.5rem', borderRadius: '4px', background: '#dcfce7', color: '#14532d' }}>
                             {claim.verificationStatus}
                           </span>
                         </td>

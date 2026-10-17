@@ -180,14 +180,14 @@ export const UnifiedTimelinePage = () => {
             return (
               <div key={rec.id} className="timeline-item">
                 <div className="timeline-marker">
-                  <Calendar size={13} color="#0284c7" />
+                  <Calendar size={13} color="#15803d" />
                 </div>
 
                 <div className="card">
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.75rem' }}>
                     <div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#0284c7', background: '#e0f2fe', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>
+                        <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#14532d', background: '#dcfce7', padding: '0.2rem 0.5rem', borderRadius: '4px', border: '1px solid #86efac' }}>
                           {rec.recordDate}
                         </span>
                         <h3 style={{ fontSize: '1.15rem', fontWeight: 600, color: '#0f172a' }}>

@@ -133,10 +133,10 @@ export const SharingPermissionsPage = () => {
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">
-              <Share2 size={18} color="#0284c7" /> Grant Provider Consent
+              <Share2 size={18} color="#15803d" /> Grant Provider Consent
             </h3>
-            <span style={{ fontSize: '0.75rem', color: '#059669', background: '#d1fae5', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 600 }}>
-              Sovereign Patient Control
+            <span style={{ fontSize: '0.75rem', color: '#14532d', background: '#dcfce7', padding: '0.2rem 0.5rem', borderRadius: '4px', fontWeight: 700, border: '1px solid #86efac' }}>
+              Sovereign Patient Control 🍃
             </span>
           </div>
 

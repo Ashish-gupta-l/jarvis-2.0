@@ -37,8 +37,8 @@ export const LoginPage = () => {
     <div className="container" style={{ maxWidth: '460px', padding: '4rem 1.5rem' }}>
       <div className="card" style={{ padding: '2rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
-          <div style={{ width: '3rem', height: '3rem', borderRadius: '50%', background: '#e0f2fe', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem' }}>
-            <LogIn size={24} color="#0284c7" />
+          <div style={{ width: '3rem', height: '3rem', borderRadius: '50%', background: '#dcfce7', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', border: '1px solid #86efac' }}>
+            <LogIn size={24} color="#15803d" />
           </div>
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0f172a' }}>Sign In to CareTrail</h2>
           <p style={{ fontSize: '0.88rem', color: '#64748b', marginTop: '0.25rem' }}>
@@ -129,7 +129,7 @@ export const LoginPage = () => {
 
         <p style={{ textAlign: 'center', fontSize: '0.85rem', color: '#64748b', marginTop: '1.5rem' }}>
           Don't have an account?{' '}
-          <Link to="/register" style={{ color: '#0284c7', fontWeight: 600 }}>
+          <Link to="/register" style={{ color: '#15803d', fontWeight: 600 }}>
             Register here
           </Link>
         </p>

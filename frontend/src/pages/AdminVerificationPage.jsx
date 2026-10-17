@@ -102,7 +102,7 @@ export const AdminVerificationPage = () => {
 
           <div className="card" style={{ padding: '1.25rem' }}>
             <span style={{ fontSize: '0.82rem', color: '#64748b', fontWeight: 600 }}>INGESTED RECORDS</span>
-            <div style={{ fontSize: '1.85rem', fontWeight: 700, color: '#0284c7', marginTop: '0.3rem' }}>
+            <div style={{ fontSize: '1.85rem', fontWeight: 700, color: '#15803d', marginTop: '0.3rem' }}>
               {stats.totalRecords}
             </div>
             <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Digitized & Hashed (SHA-256)</span>
@@ -155,7 +155,7 @@ export const AdminVerificationPage = () => {
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">
-              <UserCheck size={18} color="#0284c7" /> Provider Verification Queue
+              <UserCheck size={18} color="#15803d" /> Provider Verification Queue
             </h3>
             <span style={{ fontSize: '0.8rem', color: '#64748b' }}>Manage institutional access privileges</span>
           </div>
@@ -263,7 +263,7 @@ export const AdminVerificationPage = () => {
                       {new Date(log.timestamp).toLocaleString()}
                     </td>
                     <td>
-                      <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#0284c7', background: '#e0f2fe', padding: '0.15rem 0.5rem', borderRadius: '4px' }}>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#14532d', background: '#dcfce7', padding: '0.15rem 0.5rem', borderRadius: '4px', border: '1px solid #86efac' }}>
                         {log.action}
                       </span>
                     </td>

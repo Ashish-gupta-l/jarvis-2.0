@@ -30,17 +30,42 @@ export const LandingPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section style={{ background: 'linear-gradient(180deg, #f0fdfa 0%, #f8fafc 100%)', padding: '4.5rem 0 3.5rem', borderBottom: '1px solid #e2e8f0' }}>
-        <div className="container" style={{ textAlign: 'center', maxWidth: '840px' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#e0f2fe', color: '#0369a1', padding: '0.35rem 0.85rem', borderRadius: '9999px', fontSize: '0.82rem', fontWeight: 600, marginBottom: '1.25rem' }}>
-            <Activity size={14} /> Healthcare Continuity & Trust Layer Platform
+      <section style={{ background: 'linear-gradient(180deg, #ecfdf5 0%, #f0fdf4 50%, #f7faf8 100%)', padding: '3.5rem 0 3rem', borderBottom: '1px solid rgba(34, 197, 94, 0.15)' }}>
+        <div className="container" style={{ textAlign: 'center', maxWidth: '960px' }}>
+          
+          {/* Buildasaur Greenery Special Twist Announcement */}
+          <div className="greenery-banner" style={{ textAlign: 'left', marginBottom: '2.5rem' }}>
+            <div style={{ flex: 1, zIndex: 1 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
+                <span className="greenery-twist-tag">Round 2: The Twist</span>
+                <span className="wood-tag">🍃 Buildasaur Greenery Edition</span>
+                <span style={{ fontSize: '0.78rem', color: '#a7f3d0' }}>Indigo Tech Fest</span>
+              </div>
+              <h2 className="greenery-banner-title">
+                Same Ideas, New Challenges, Bigger Impact!
+              </h2>
+              <p className="greenery-banner-sub">
+                CareTrail has evolved with the <strong>Lush Greenery theme</strong> — harmonizing clinical continuity, patient safety, and resilient AI triage within a vibrant, nature-inspired design system.
+              </p>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+              <img 
+                src="/buildasaur-greenery.png" 
+                alt="Buildasaur Indigo Tech Fest - Greenery Edition" 
+                style={{ height: '95px', maxWidth: '200px', objectFit: 'contain', borderRadius: '10px', boxShadow: '0 6px 16px rgba(0,0,0,0.25)', border: '2px solid rgba(134, 239, 172, 0.4)' }}
+              />
+            </div>
+          </div>
+
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#dcfce7', color: '#14532d', padding: '0.35rem 0.85rem', borderRadius: '9999px', fontSize: '0.82rem', fontWeight: 700, marginBottom: '1.25rem', border: '1px solid #86efac' }}>
+            <Activity size={14} color="#15803d" /> Healthcare Continuity & Document Trust Layer
           </div>
 
           <h1 style={{ fontSize: '2.75rem', fontWeight: 800, color: '#0f172a', lineHeight: 1.2, letterSpacing: '-0.03em' }}>
-            Unify Fragmented Medical Records with <span style={{ color: '#0284c7' }}>Transparent Trust</span>
+            Unify Fragmented Medical Records with <span style={{ color: '#15803d', textDecoration: 'underline', textDecorationColor: '#86efac' }}>Transparent Trust</span>
           </h1>
 
-          <p style={{ fontSize: '1.15rem', color: '#475569', marginTop: '1.25rem', lineHeight: 1.6 }}>
+          <p style={{ fontSize: '1.15rem', color: '#334155', marginTop: '1.25rem', lineHeight: 1.6 }}>
             Patients receive medical care across multiple hospitals, clinics, and labs. CareTrail consolidates fragmented records chronologically, detects discrepancies and medication conflicts, maps continuity gaps, and enables consent-based sharing with authorized providers.
           </p>
 
@@ -54,17 +79,17 @@ export const LandingPage = () => {
           </div>
 
           {/* Quick Demo Scenario Logins */}
-          <div style={{ marginTop: '3rem', background: '#ffffff', border: '1px solid #cbd5e1', borderRadius: '12px', padding: '1.5rem', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
-            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#0f766e', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div style={{ marginTop: '2.5rem', background: '#ffffff', border: '1px solid rgba(22, 163, 74, 0.25)', borderRadius: '14px', padding: '1.5rem', boxShadow: '0 8px 20px -2px rgba(22, 101, 52, 0.08)' }}>
+            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#15803d', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem' }}>
               ⚡ 1-Click Interactive Demonstration Scenarios
             </span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
               <button
                 className="btn btn-secondary"
-                style={{ flexDirection: 'column', padding: '0.85rem', alignItems: 'flex-start', textAlign: 'left' }}
+                style={{ flexDirection: 'column', padding: '0.85rem', alignItems: 'flex-start', textAlign: 'left', borderColor: 'rgba(22, 163, 74, 0.25)' }}
                 onClick={() => handleQuickLogin('john_patient', 'Password123!', '/dashboard')}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 600, color: '#0284c7' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 700, color: '#15803d' }}>
                   <User size={16} /> John Doe (Patient)
                 </div>
                 <span style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '0.2rem' }}>
@@ -74,10 +99,10 @@ export const LandingPage = () => {
 
               <button
                 className="btn btn-secondary"
-                style={{ flexDirection: 'column', padding: '0.85rem', alignItems: 'flex-start', textAlign: 'left' }}
+                style={{ flexDirection: 'column', padding: '0.85rem', alignItems: 'flex-start', textAlign: 'left', borderColor: 'rgba(13, 148, 136, 0.25)' }}
                 onClick={() => handleQuickLogin('dr_sarah', 'DoctorPass123!', '/provider')}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 600, color: '#0f766e' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 700, color: '#0d9488' }}>
                   <Stethoscope size={16} /> Dr. Sarah Jenkins (Provider)
                 </div>
                 <span style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '0.2rem' }}>
@@ -87,10 +112,10 @@ export const LandingPage = () => {
 
               <button
                 className="btn btn-secondary"
-                style={{ flexDirection: 'column', padding: '0.85rem', alignItems: 'flex-start', textAlign: 'left' }}
+                style={{ flexDirection: 'column', padding: '0.85rem', alignItems: 'flex-start', textAlign: 'left', borderColor: '#fca5a5' }}
                 onClick={() => handleQuickLogin('admin', 'AdminPass123!', '/admin')}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 600, color: '#9f1239' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontWeight: 700, color: '#9f1239' }}>
                   <ShieldAlert size={16} /> Platform Administrator
                 </div>
                 <span style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '0.2rem' }}>
@@ -114,8 +139,8 @@ export const LandingPage = () => {
 
           <div className="grid-3">
             <div className="card">
-              <div style={{ width: '2.75rem', height: '2.75rem', borderRadius: '8px', background: '#e0f2fe', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem' }}>
-                <ShieldCheck size={24} color="#0284c7" />
+              <div style={{ width: '2.75rem', height: '2.75rem', borderRadius: '8px', background: '#dcfce7', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', border: '1px solid #86efac' }}>
+                <ShieldCheck size={24} color="#15803d" />
               </div>
               <h3 style={{ fontSize: '1.15rem', fontWeight: 600, marginBottom: '0.5rem' }}>Medical Document Trust Layer</h3>
               <p style={{ fontSize: '0.88rem', color: '#64748b', lineHeight: 1.6 }}>

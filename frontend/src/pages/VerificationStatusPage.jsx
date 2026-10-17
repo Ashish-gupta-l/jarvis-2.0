@@ -105,7 +105,7 @@ export const VerificationStatusPage = () => {
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">
-              <FileCheck size={18} color="#0284c7" /> Select Document to Inspect
+              <FileCheck size={18} color="#15803d" /> Select Document to Inspect
             </h3>
             <span style={{ fontSize: '0.82rem', color: '#64748b' }}>{records.length} total</span>
           </div>
@@ -123,8 +123,8 @@ export const VerificationStatusPage = () => {
                     style={{
                       padding: '0.85rem 1rem',
                       borderRadius: '8px',
-                      border: isSelected ? '2px solid #0284c7' : '1px solid #e2e8f0',
-                      background: isSelected ? '#f0f9ff' : '#ffffff',
+                      border: isSelected ? '2px solid #15803d' : '1px solid #e2e8f0',
+                      background: isSelected ? '#f0fdf4' : '#ffffff',
                       cursor: 'pointer',
                       transition: 'all 0.15s ease'
                     }}
@@ -231,7 +231,7 @@ export const VerificationStatusPage = () => {
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.25rem' }}>
-                        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#0284c7' }}>
+                        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#15803d' }}>
                           Method: {evt.methodUsed}
                         </span>
                         <span style={{ fontSize: '0.75rem', color: '#64748b' }}>

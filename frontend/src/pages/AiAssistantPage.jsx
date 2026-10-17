@@ -249,8 +249,8 @@ export const AiAssistantPage = () => {
       {/* Page Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: '#e0f2fe', color: '#0369a1', padding: '0.25rem 0.75rem', borderRadius: '9999px', fontSize: '0.8rem', fontWeight: 600, marginBottom: '0.5rem' }}>
-            <Sparkles size={14} /> CareTrail Jarvis 2.0 AI Core
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: '#dcfce7', color: '#14532d', padding: '0.25rem 0.75rem', borderRadius: '9999px', fontSize: '0.8rem', fontWeight: 700, marginBottom: '0.5rem', border: '1px solid #86efac' }}>
+            <Sparkles size={14} color="#15803d" /> CareTrail Jarvis 2.0 AI Core 🍃 Greenery
           </div>
           <h1 style={{ fontSize: '1.85rem', fontWeight: 800, color: '#0f172a', margin: 0 }}>
             {t.title}
@@ -319,7 +319,7 @@ export const AiAssistantPage = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem', background: '#f8fafc', padding: '0.75rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
               <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: 600, color: '#334155', cursor: 'pointer' }}>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Globe size={14} color="#0284c7" /> {t.webSearch}
+                  <Globe size={14} color="#15803d" /> {t.webSearch}
                 </span>
                 <input
                   type="checkbox"
@@ -330,7 +330,7 @@ export const AiAssistantPage = () => {
 
               <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: 600, color: '#334155', cursor: 'pointer' }}>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Brain size={14} color="#8b5cf6" /> {t.deepThinking}
+                  <Brain size={14} color="#15803d" /> {t.deepThinking}
                 </span>
                 <input
                   type="checkbox"
@@ -382,7 +382,7 @@ export const AiAssistantPage = () => {
                   onClick={() => handleSend(p)}
                   disabled={isLoading}
                 >
-                  <Sparkles size={12} color="#0284c7" style={{ flexShrink: 0 }} /> {p}
+                  <Sparkles size={12} color="#15803d" style={{ flexShrink: 0 }} /> {p}
                 </button>
               ))}
             </div>
@@ -392,9 +392,9 @@ export const AiAssistantPage = () => {
         {/* Right Main Chat Workspace */}
         <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '700px', padding: 0, overflow: 'hidden' }}>
           {/* Chat Workspace Header */}
-          <div style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)', color: '#ffffff', padding: '14px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ background: 'linear-gradient(135deg, #064e3b 0%, #065f46 60%, #0f766e 100%)', color: '#ffffff', padding: '14px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid rgba(134, 239, 172, 0.25)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <div style={{ width: '36px', height: '36px', background: 'linear-gradient(135deg, #0284c7 0%, #38bdf8 100%)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ width: '36px', height: '36px', background: 'linear-gradient(135deg, #16a34a 0%, #0d9488 100%)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 2px 8px rgba(34, 197, 94, 0.35)' }}>
                 <Sparkles size={20} color="#ffffff" />
               </div>
               <div>

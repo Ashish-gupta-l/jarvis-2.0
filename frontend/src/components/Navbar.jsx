@@ -14,7 +14,8 @@ import {
   UserCheck,
   Shield,
   Home,
-  Sparkles
+  Sparkles,
+  Leaf
 } from 'lucide-react';
 
 export const Navbar = () => {
@@ -33,10 +34,15 @@ export const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-inner">
         <Link to="/" className="brand-logo">
-          <div className="brand-badge">
-            <Activity size={22} />
+          <div className="brand-badge" title="Buildasaur Greenery Edition">
+            <Leaf size={22} />
           </div>
-          <span>CareTrail</span>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+            CareTrail
+            <span className="greenery-pill" style={{ fontSize: '0.68rem', padding: '0.15rem 0.45rem' }}>
+              Greenery 🍃
+            </span>
+          </span>
         </Link>
 
         <div className="nav-links">
@@ -45,7 +51,7 @@ export const Navbar = () => {
               <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>
                 <Home size={16} /> Home
               </Link>
-              <Link to="/ai-assistant" className={`nav-link ${isActive('/ai-assistant') ? 'active' : ''}`} style={{ color: '#0284c7', fontWeight: 600 }}>
+              <Link to="/ai-assistant" className={`nav-link ${isActive('/ai-assistant') ? 'active' : ''}`} style={{ color: '#15803d', fontWeight: 600 }}>
                 <Sparkles size={16} /> Jarvis AI
               </Link>
               <Link to="/login" className="btn btn-secondary btn-sm">
@@ -108,7 +114,7 @@ export const Navbar = () => {
                 </>
               )}
 
-              <Link to="/ai-assistant" className={`nav-link ${isActive('/ai-assistant') ? 'active' : ''}`} style={{ color: '#0284c7', fontWeight: 600 }}>
+              <Link to="/ai-assistant" className={`nav-link ${isActive('/ai-assistant') ? 'active' : ''}`} style={{ color: '#15803d', fontWeight: 600 }}>
                 <Sparkles size={16} /> Jarvis AI
               </Link>
 

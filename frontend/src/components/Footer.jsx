@@ -6,9 +6,10 @@ export const Footer = () => {
     <footer className="footer">
       <div className="container footer-inner">
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <ShieldCheck size={18} color="#0284c7" />
+          <ShieldCheck size={18} color="#15803d" />
           <span style={{ fontWeight: 600, color: '#0f172a' }}>CareTrail Platform</span>
-          <span>— Intelligent Healthcare Continuity & Medical Document Trust Layer</span>
+          <span className="greenery-pill">🍃 Greenery Edition</span>
+          <span>— Intelligent Healthcare Continuity</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: '#64748b' }}>
           <Info size={14} />

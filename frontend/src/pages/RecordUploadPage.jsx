@@ -180,8 +180,8 @@ export const RecordUploadPage = () => {
                 accept=".pdf,.jpg,.jpeg,.png,.txt"
                 onChange={handleFileChange}
               />
-              <div style={{ width: '3rem', height: '3rem', borderRadius: '50%', background: '#e0f2fe', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem' }}>
-                <Upload size={22} color="#0284c7" />
+              <div style={{ width: '3rem', height: '3rem', borderRadius: '50%', background: '#dcfce7', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 0.75rem', border: '1px solid #86efac' }}>
+                <Upload size={22} color="#15803d" />
               </div>
               {file ? (
                 <div>

@@ -47,7 +47,7 @@ export const OcrCorrectionModal = ({ record, isOpen, onClose, onSaveSuccess }) =
       <div className="modal-card" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <Edit3 size={20} color="#0284c7" />
+            <Edit3 size={20} color="#15803d" />
             <div>
               <h3 style={{ fontSize: '1.15rem', fontWeight: 600 }}>Review & Correct Extracted Information</h3>
               <p style={{ fontSize: '0.8rem', color: '#64748b' }}>

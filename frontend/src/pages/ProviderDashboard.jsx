@@ -86,9 +86,9 @@ export const ProviderDashboard = () => {
         <div className="card" style={{ padding: '1.25rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <span style={{ fontSize: '0.82rem', fontWeight: 600, color: '#64748b', textTransform: 'uppercase' }}>Active Consent Grants</span>
-            <ShieldCheck size={18} color="#0284c7" />
+            <ShieldCheck size={18} color="#15803d" />
           </div>
-          <div style={{ fontSize: '1.85rem', fontWeight: 700, color: '#0284c7', marginTop: '0.4rem' }}>
+          <div style={{ fontSize: '1.85rem', fontWeight: 700, color: '#15803d', marginTop: '0.4rem' }}>
             {activePerms.length}
           </div>
           <span style={{ fontSize: '0.78rem', color: '#64748b', marginTop: '0.2rem', display: 'block' }}>

@@ -333,7 +333,7 @@ export const RegisterPage = () => {
 
         <p style={{ textAlign: 'center', fontSize: '0.85rem', color: '#64748b', marginTop: '1.5rem' }}>
           Already registered?{' '}
-          <Link to="/login" style={{ color: '#0284c7', fontWeight: 600 }}>
+          <Link to="/login" style={{ color: '#15803d', fontWeight: 600 }}>
             Sign In here
           </Link>
         </p>

@@ -126,7 +126,7 @@ export const ConflictReviewPage = () => {
                 {/* Side-by-Side Comparison */}
                 <div className="grid-2" style={{ gap: '1rem', marginTop: '1rem' }}>
                   <div style={{ background: '#f8fafc', padding: '1rem', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-                    <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#0284c7', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#15803d', textTransform: 'uppercase', marginBottom: '0.25rem' }}>
                       Source Record 1 (#{conflict.record1.id}):
                     </div>
                     <div style={{ fontSize: '0.88rem', fontWeight: 600, color: '#0f172a' }}>

@@ -209,7 +209,7 @@ export const ContinuityGapMapPage = () => {
           <div className="card">
             <div className="card-header">
               <h3 className="card-title">
-                <ShieldAlert size={18} color="#0284c7" /> Records Needing Verification or Patient Review
+                <ShieldAlert size={18} color="#15803d" /> Records Needing Verification or Patient Review
               </h3>
               <span style={{ fontSize: '0.8rem', color: '#64748b' }}>Trust Layer Review</span>
             </div>

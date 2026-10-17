@@ -35,10 +35,10 @@ export const AccessAuditHistoryPage = () => {
   }, []);
 
   const getActionBadge = (action) => {
-    if (action.includes('SHARE')) return { color: '#0284c7', bg: '#e0f2fe', icon: Share2 };
+    if (action.includes('SHARE')) return { color: '#15803d', bg: '#dcfce7', icon: Share2 };
     if (action.includes('REVOKE')) return { color: '#e11d48', bg: '#ffe4e6', icon: UserX };
-    if (action.includes('UPLOAD')) return { color: '#059669', bg: '#d1fae5', icon: Upload };
-    if (action.includes('VIEW') || action.includes('DOWNLOAD')) return { color: '#4f46e5', bg: '#e0e7ff', icon: Eye };
+    if (action.includes('UPLOAD')) return { color: '#16a34a', bg: '#dcfce7', icon: Upload };
+    if (action.includes('VIEW') || action.includes('DOWNLOAD')) return { color: '#0d9488', bg: '#ccfbf1', icon: Eye };
     if (action.includes('VERIFICATION')) return { color: '#0f766e', bg: '#ccfbf1', icon: Shield };
     return { color: '#475569', bg: '#f1f5f9', icon: History };
   };
@@ -53,7 +53,7 @@ export const AccessAuditHistoryPage = () => {
           </p>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: '#059669', background: '#d1fae5', padding: '0.35rem 0.75rem', borderRadius: '6px', fontWeight: 600 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: '#14532d', background: '#dcfce7', padding: '0.35rem 0.75rem', borderRadius: '6px', fontWeight: 600, border: '1px solid #86efac' }}>
           <Lock size={14} /> Immutable Audit Ledger
         </div>
       </div>
@@ -61,7 +61,7 @@ export const AccessAuditHistoryPage = () => {
       <div className="card">
         <div className="card-header">
           <h3 className="card-title">
-            <History size={18} color="#0284c7" /> Audit Event Stream
+            <History size={18} color="#15803d" /> Audit Event Stream
           </h3>
           <span style={{ fontSize: '0.8rem', color: '#64748b' }}>{logs.length} logged events</span>
         </div>

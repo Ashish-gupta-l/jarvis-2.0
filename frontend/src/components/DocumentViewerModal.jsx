@@ -64,7 +64,7 @@ export const DocumentViewerModal = ({ record, isOpen, onClose }) => {
         <div className="modal-header">
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <FileText className="text-primary" size={20} color="#0284c7" />
+              <FileText className="text-primary" size={20} color="#15803d" />
               <h3 style={{ fontSize: '1.15rem', fontWeight: 600 }}>{record.title}</h3>
             </div>
             <p style={{ fontSize: '0.82rem', color: '#64748b', marginTop: '0.2rem' }}>
@@ -91,7 +91,7 @@ export const DocumentViewerModal = ({ record, isOpen, onClose }) => {
 
           {loading && (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, padding: '3rem' }}>
-              <Loader2 size={32} className="spin" color="#0284c7" />
+              <Loader2 size={32} className="spin" color="#15803d" />
               <p style={{ marginTop: '0.75rem', color: '#64748b', fontSize: '0.9rem' }}>Verifying permissions and streaming original file...</p>
             </div>
           )}
