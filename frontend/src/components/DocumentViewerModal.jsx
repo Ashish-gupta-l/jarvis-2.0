@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, FileText, Download, ShieldAlert, Loader2 } from 'lucide-react';
 import StatusBadge from './StatusBadge';
+import { apiEndpoint } from '../services/api';
 
 export const DocumentViewerModal = ({ record, isOpen, onClose }) => {
   const [loading, setLoading] = useState(true);
@@ -22,7 +23,7 @@ export const DocumentViewerModal = ({ record, isOpen, onClose }) => {
       setError(null);
       try {
         const token = localStorage.getItem('caretrail_token');
-        const response = await fetch(`/api/records/${record.id}/document`, {
+        const response = await fetch(apiEndpoint(`/records/${record.id}/document`), {
           headers: {
             Authorization: `Bearer ${token}`
           }
