@@ -13,7 +13,8 @@ import {
   LogOut,
   UserCheck,
   Shield,
-  Home
+  Home,
+  Sparkles
 } from 'lucide-react';
 
 export const Navbar = () => {
@@ -43,6 +44,9 @@ export const Navbar = () => {
             <>
               <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>
                 <Home size={16} /> Home
+              </Link>
+              <Link to="/ai-assistant" className={`nav-link ${isActive('/ai-assistant') ? 'active' : ''}`} style={{ color: '#0284c7', fontWeight: 600 }}>
+                <Sparkles size={16} /> Jarvis AI
               </Link>
               <Link to="/login" className="btn btn-secondary btn-sm">
                 Sign In
@@ -103,6 +107,10 @@ export const Navbar = () => {
                   </Link>
                 </>
               )}
+
+              <Link to="/ai-assistant" className={`nav-link ${isActive('/ai-assistant') ? 'active' : ''}`} style={{ color: '#0284c7', fontWeight: 600 }}>
+                <Sparkles size={16} /> Jarvis AI
+              </Link>
 
               <div className="user-pill">
                 <span style={{ fontWeight: 600, color: '#0f172a' }}>{user.fullName || user.username}</span>

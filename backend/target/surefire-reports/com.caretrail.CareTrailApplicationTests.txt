@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.caretrail.CareTrailApplicationTests
--------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.207 s -- in com.caretrail.CareTrailApplicationTests

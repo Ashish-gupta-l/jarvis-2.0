@@ -20,6 +20,8 @@ import AccessAuditHistoryPage from './pages/AccessAuditHistoryPage';
 import ProviderDashboard from './pages/ProviderDashboard';
 import ProviderUploadPage from './pages/ProviderUploadPage';
 import AdminVerificationPage from './pages/AdminVerificationPage';
+import AiAssistantPage from './pages/AiAssistantPage';
+import ChatbotWidget from './components/ChatbotWidget';
 
 import './App.css';
 
@@ -53,6 +55,7 @@ export const App = () => {
               <Route path="/" element={<LandingPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegisterPage />} />
+              <Route path="/ai-assistant" element={<AiAssistantPage />} />
 
               {/* Patient Routes */}
               <Route
@@ -169,6 +172,7 @@ export const App = () => {
             </Routes>
           </main>
           <Footer />
+          <ChatbotWidget />
         </div>
       </Router>
     </AuthProvider>
