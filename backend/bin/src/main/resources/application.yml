@@ -1,0 +1,59 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: caretrail-backend
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 30MB
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+caretrail:
+  upload:
+    dir: ./uploads
+  jwt:
+    secret: "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970"
+    expiration-ms: 86400000 # 24 hours
+
+---
+# Development profile: Embedded persistent database with PostgreSQL compatibility mode
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:h2:file:./data/caretraildb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+---
+# Production profile: Direct PostgreSQL database
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:caretrail}
+    driverClassName: org.postgresql.Driver
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

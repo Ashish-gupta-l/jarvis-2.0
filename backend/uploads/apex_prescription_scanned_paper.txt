@@ -1,0 +1,26 @@
+========================================================
+CARE-TRAIL CLINICAL REPOSITORY DOCUMENT ARCHIVE
+========================================================
+FACILITY: Apex Urgent Care & Community Clinic
+PHYSICIAN: Dr. Emily Davis, DO
+DOCUMENT TITLE: Urgent Care Prescription & Clinical Note
+DATE OF RECORD: 2026-06-15
+PATIENT: John Doe (ID: CT-PID-100452)
+VERIFICATION STATUS: Patient-uploaded — not yet verified
+
+CLINICAL SUMMARY:
+Patient seen for acute bronchitis and lower extremity aching. Prescribed high-dose Metformin 1000mg twice daily and Warfarin 5mg daily. Note: Scanned paper certificate uploaded by patient.
+
+DIAGNOSES:
+Acute Bronchitis; Deep Vein Thrombosis (Suspected)
+
+MEDICATIONS:
+Metformin 1000mg twice daily; Warfarin 5mg daily; Amoxicillin 500mg
+
+INVESTIGATIONS / LAB VALUES:
+Oxygen Saturation: 97%; Temp: 98.6 F
+
+AUTHENTICITY METADATA:
+Issuer Verification Channel: Patient Paper Scan Intake
+Digital Signature: None / Unsigned Physical Certificate
+========================================================

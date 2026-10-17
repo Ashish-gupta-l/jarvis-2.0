@@ -1,0 +1,26 @@
+========================================================
+CARE-TRAIL CLINICAL REPOSITORY DOCUMENT ARCHIVE
+========================================================
+FACILITY: St. Jude Regional Medical Center
+PHYSICIAN: Dr. Sarah Jenkins, MD
+DOCUMENT TITLE: Inpatient Hospital Discharge Summary
+DATE OF RECORD: 2026-09-02
+PATIENT: John Doe (ID: CT-PID-100452)
+VERIFICATION STATUS: Issuer-confirmed
+
+CLINICAL SUMMARY:
+Patient discharged following 48-hour observation for chest tightness. Ruled out acute coronary syndrome. Follow-up plan: mandatory repeat HbA1c panel and outpatient transthoracic echocardiogram in 4 weeks.
+
+DIAGNOSES:
+Hypertensive Urgency (Resolved); Type 2 Diabetes Mellitus
+
+MEDICATIONS:
+Lisinopril 20mg daily; Atorvastatin 20mg daily; Metformin 500mg daily
+
+INVESTIGATIONS / LAB VALUES:
+Troponin T: <0.01 ng/mL (Normal); Ejection Fraction: 55%
+
+AUTHENTICITY METADATA:
+Issuer Verification Channel: Direct EHR/EMR Integration
+Digital Signature: None / Unsigned Physical Certificate
+========================================================

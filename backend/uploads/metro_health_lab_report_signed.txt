@@ -1,0 +1,26 @@
+========================================================
+CARE-TRAIL CLINICAL REPOSITORY DOCUMENT ARCHIVE
+========================================================
+FACILITY: Metro Health Diagnostic Center
+PHYSICIAN: Dr. Robert Chen, MD
+DOCUMENT TITLE: Comprehensive Metabolic Panel & Glycated Hemoglobin
+DATE OF RECORD: 2026-08-20
+PATIENT: John Doe (ID: CT-PID-100452)
+VERIFICATION STATUS: Digitally signed — signature validated
+
+CLINICAL SUMMARY:
+Standard fasting blood panel. Specimen collected under verified CLIA protocols. Cryptographic digital signature validated by hospital PKI infrastructure.
+
+DIAGNOSES:
+Type 2 Diabetes Mellitus; Hyperlipidemia
+
+MEDICATIONS:
+Metformin (continuation recommended)
+
+INVESTIGATIONS / LAB VALUES:
+HbA1c: 6.9%; Fasting Blood Glucose: 134 mg/dL; Serum Creatinine: 1.0 mg/dL; eGFR: >60 mL/min; Total Cholesterol: 215 mg/dL
+
+AUTHENTICITY METADATA:
+Issuer Verification Channel: Direct EHR/EMR Integration
+Digital Signature: SHA-256 with RSA-2048 PKI Verified
+========================================================

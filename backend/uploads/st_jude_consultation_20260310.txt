@@ -1,0 +1,26 @@
+========================================================
+CARE-TRAIL CLINICAL REPOSITORY DOCUMENT ARCHIVE
+========================================================
+FACILITY: St. Jude Regional Medical Center
+PHYSICIAN: Dr. Sarah Jenkins, MD
+DOCUMENT TITLE: Cardiology Comprehensive Consultation
+DATE OF RECORD: 2026-03-10
+PATIENT: John Doe (ID: CT-PID-100452)
+VERIFICATION STATUS: Issuer-confirmed
+
+CLINICAL SUMMARY:
+Patient presented with intermittent exertional dyspnea and elevated blood pressure readings at home. EKG shows normal sinus rhythm. Prescribed Metformin 500mg daily and Lisinopril 10mg daily.
+
+DIAGNOSES:
+Essential Hypertension; Impaired Glucose Tolerance
+
+MEDICATIONS:
+Metformin 500mg daily; Lisinopril 10mg daily
+
+INVESTIGATIONS / LAB VALUES:
+Blood Pressure: 138/86 mmHg; Resting Heart Rate: 72 bpm
+
+AUTHENTICITY METADATA:
+Issuer Verification Channel: Direct EHR/EMR Integration
+Digital Signature: None / Unsigned Physical Certificate
+========================================================
